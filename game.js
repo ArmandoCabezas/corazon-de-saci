@@ -69,7 +69,7 @@ function isoBoy(time){
  ctx.save();ctx.translate(p.x,p.y);for(let y=14;y<spriteFront.length;y++)row(y);
  ctx.save();ctx.translate(0,-42+pose.nod);ctx.rotate(pose.tilt);ctx.translate(0,42);for(let y=0;y<14;y++)row(y);
  // The visor extends behind the head, opposite the walking direction.
- rect(left?18:-39,-63,21,6,'#a94329');rect(left?21:-36,-63,18,3,'#f99838');
+ rect(left?18:-30,-63,12,6,'#a94329');rect(left?21:-27,-63,9,3,'#f99838');
  if(pose.listening){
   // Black over-ear headphones: crown band over the backward orange cap.
   rect(-18,-84,36,6,'#080d10');rect(-24,-78,6,21,'#080d10');rect(18,-78,6,21,'#080d10');
