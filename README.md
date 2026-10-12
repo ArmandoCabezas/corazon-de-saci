@@ -1,22 +1,19 @@
 # Corazón de Sací · ArM
 
-Juego de plataformas 2D y recorrido musical por la vida de ArM, inspirado en el proyecto arquitectónico Corazón de Sací.
+Un recorrido musical de plataformas 2D por 21 canciones y cuatro etapas: Enamorarse, Despedirse, Reconstruirse y Un nuevo inicio.
 
-21 capítulos, escenario en pixel art con parallax y un cuadro sorpresa con ocho adelantos inéditos de 30 segundos. Compatible con teclado y controles táctiles.
+## Jugar
 
-## Controles
+A/D o flechas para caminar, Espacio/↑ para saltar, E para interactuar y P para pausar. En teléfono, usar los controles táctiles. En la reconstrucción y el nuevo inicio se habilita un segundo salto en el aire.
 
-- A / D o flechas: caminar.
-- Espacio / flecha arriba: saltar.
-- P: pausar música.
-- R: pedir otro adelanto frente al cuadro sorpresa.
+Escuchar cuatro segundos recupera un recuerdo. Cada ambiente guarda un símbolo: tres estrellas, el orden de los ecos (II → I → III), tres semillas y tres espejos. Recuperar los cuatro símbolos y al menos un recuerdo de cada ambiente abre el corazón final. El progreso y el último cuadro se guardan localmente en el navegador. Las caídas en el agua regresan al último cuadro; no quitan recuerdos.
 
-En teléfono, usá los botones de movimiento y salto. El botón de ampliar permite dedicar la pantalla al juego.
+Las canciones continúan mientras se explora. Cada muestra tiene una atmósfera visual y un pulso estimado para la animación de ArM con sus audífonos negros. La preferencia de movimiento reducido desactiva los movimientos decorativos y los pulsos.
+
+## Música
+
+Muestras oficiales de Apple Music para las 21 canciones. El cuadro sorpresa incluye ocho fragmentos inéditos de 30 segundos. «Como yo» conserva el corte de 0:55 a 1:25. Se pueden probar archivos propios en el catálogo durante la sesión.
 
 ## Publicación
 
-Sitio estático: GitHub Pages desde la rama main, carpeta raíz.
-
-El audio del recorrido usa muestras oficiales de Apple Music. El cuadro sorpresa incluye únicamente fragmentos de los demos, no los archivos completos. «Como yo» utiliza el fragmento 0:55–1:25.
-
-ArM lleva la gorrita hacia atrás y se pone audífonos negros al escuchar. La cabeza acompaña el pulso estimado de las muestras; al pausar o moverse, la animación se detiene.
+Sitio estático en GitHub Pages, desde la rama main y la raíz del repositorio.
