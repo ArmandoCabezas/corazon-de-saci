@@ -164,7 +164,7 @@ TRACKS.forEach((t,i)=>{const row=document.createElement('div');row.className='tr
 
 
 
-$('storyHide').onclick=()=>{$('storyCard').classList.add('hidden');$('storyReveal').classList.remove('hidden');canvas.focus()};$('storyReveal').onclick=()=>{if(current===SURPRISE_INDEX)showSurprise(true);else if(current>=0)showChapter(current,true)};$('projectText').textContent=STORY.project;$('storyNote').textContent=STORY.note;
+$('storyHide').onclick=()=>{$('storyCard').classList.add('hidden');$('storyReveal').classList.remove('hidden');canvas.focus()};$('storyReveal').onclick=()=>{document.body.classList.remove('goal-expanded');$('goalToggle').setAttribute('aria-expanded','false');if(current===SURPRISE_INDEX)showSurprise(true);else if(current>=0)showChapter(current,true)};$('projectText').textContent=STORY.project;$('storyNote').textContent=STORY.note;
 const journal=$('journal');STORY.chapters.forEach((c,i)=>{const entry=document.createElement('details');const heading=document.createElement('summary');heading.textContent=String(c.stage).padStart(2,'0')+' · '+TRACKS[i].title+' — '+c.name;const paragraph=document.createElement('p');paragraph.textContent=c.text;const location=document.createElement('small');location.textContent=c.space;entry.append(heading,paragraph,location);journal.append(entry)});
 
 function drawMystery(p){const x=p.x-24,y=p.y-34;rect(x-5,y-5,58,79,'#193c37');rect(x-3,y-3,54,75,'#e3ae65');rect(x,y,48,69,'#284e46');for(let j=0;j<22;j++)rect(x+(j*17)%45,y+(j*13)%66,3,3,j%3?'#617a55':'#dfa558');const q=['011110','110011','000011','000110','001100','001100','000000','001100'];q.forEach((row,yy)=>[...row].forEach((v,xx)=>{if(v==='1')rect(x+12+xx*4,y+16+yy*4,4,4,'#f5d78f')}));}
@@ -192,4 +192,4 @@ $('finaleClose').onclick=()=>{$('finale').classList.add('hidden');canvas.focus()
 $('finalePreview').onclick=()=>{$('finale').classList.add('hidden');$('goSurprise').click();};
 loadJourney();updateJourneyHud();
 
-$('goalToggle').onclick=()=>{const expanded=document.body.classList.contains('goal-expanded');document.body.classList.toggle('goal-expanded',!expanded);$('goalToggle').setAttribute('aria-expanded',String(!expanded));};
+$('goalToggle').onclick=()=>{const expanded=document.body.classList.contains('goal-expanded');document.body.classList.toggle('goal-expanded',!expanded);$('goalToggle').setAttribute('aria-expanded',String(!expanded));if(!expanded&&matchMedia('(max-width:700px) and (orientation:portrait)').matches){$('storyCard').classList.add('hidden');$('storyReveal').classList.remove('hidden');}};
