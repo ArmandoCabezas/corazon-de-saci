@@ -2,7 +2,7 @@
 
 Juego de plataformas 2D y recorrido musical por la vida de ArM, inspirado en el proyecto arquitectónico Corazón de Sací.
 
-19 capítulos, escenario en pixel art con parallax y un cuadro sorpresa con ocho adelantos inéditos de 30 segundos. Compatible con teclado y controles táctiles.
+21 capítulos, escenario en pixel art con parallax y un cuadro sorpresa con ocho adelantos inéditos de 30 segundos. Compatible con teclado y controles táctiles.
 
 ## Controles
 
@@ -18,3 +18,5 @@ En teléfono, usá los botones de movimiento y salto. El botón de ampliar permi
 Sitio estático: GitHub Pages desde la rama main, carpeta raíz.
 
 El audio del recorrido usa muestras oficiales de Apple Music. El cuadro sorpresa incluye únicamente fragmentos de los demos, no los archivos completos. «Como yo» utiliza el fragmento 0:55–1:25.
+
+ArM lleva la gorrita hacia atrás y se pone audífonos negros al escuchar. La cabeza acompaña el pulso estimado de las muestras; al pausar o moverse, la animación se detiene.
